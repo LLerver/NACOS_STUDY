@@ -24,26 +24,27 @@ package com.alibaba.nacos.api;
  * @author pbting
  */
 public interface SystemPropertyKeyConst {
-    
+
     String NAMING_SERVER_PORT = "nacos.naming.exposed.port";
-    
+
     String NAMING_WEB_CONTEXT = "nacos.naming.web.context";
-    
+
     /**
      * In the cloud (Alibaba Cloud or other cloud vendors) environment, whether to enable namespace resolution in the
      * cloud environment.
+     * 在云（阿里云或其他云供应商）环境中，是否在云环境中启用名称空间解析。
      * <p>
-     * The default is on.
+     * The default is on.   默认开启
      * </p>
      */
     String IS_USE_CLOUD_NAMESPACE_PARSING = "nacos.use.cloud.namespace.parsing";
-    
+
     /**
      * In the cloud environment, if the process level requires a globally uniform namespace, it can be specified with
      * the -D parameter.
      */
     String ANS_NAMESPACE = "ans.namespace";
-    
+
     /**
      * It is also supported by the -D parameter.
      */

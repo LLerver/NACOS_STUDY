@@ -34,6 +34,7 @@ public class App {
         properties.setProperty("namespace", "quickStart");
         // 主启动程序
         NamingService naming = NamingFactory.createNamingService(properties);
+        // 开始注册实例
         naming.registerInstance("nacos.test.3", "11.11.11.11", 8888, "TEST1");
         naming.registerInstance("nacos.test.3", "2.2.2.2", 9999, "DEFAULT");
         System.out.println(naming.getAllInstances("nacos.test.3"));

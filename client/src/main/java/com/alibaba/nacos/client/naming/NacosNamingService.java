@@ -88,7 +88,9 @@ public class NacosNamingService implements NamingService {
      * @throws NacosException
      */
     private void init(Properties properties) throws NacosException {
+        // 校验properties文件中的配置内容
         ValidatorUtils.checkInitParam(properties);
+        // 获取命名空间参数
         this.namespace = InitUtils.initNamespaceForNaming(properties);
         InitUtils.initSerialization();
         initServerAddr(properties);
